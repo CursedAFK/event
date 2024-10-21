@@ -1,0 +1,55 @@
+:root {
+	--background: #ffffff;
+	--text: #334155;
+	--border: #e2e8f0;
+	--primary: #8576ff;
+	--foreground: #ffffff;
+	--foreground-header: #f1f5f9;
+	--foreground-footer: #f8fafc;
+	--foreground-select: #fcf7ff;
+	--foreground-text: #8576ff;
+	--foreground-active: #f2f2f7;
+
+	--status-completed-background: #d1fae5;
+	--status-completed-border: #d1fae500;
+	--status-completed-indicator: #10b981;
+	--status-completed-text: #10b981;
+
+	--status-in-progress-background: #dbeafe;
+	--status-in-progress-border: #dbeafe00;
+	--status-in-progress-indicator: #3b82f6;
+	--status-in-progress-text: #3b82f6;
+}
+
+.dark {
+	--background: #383544;
+	--text: #ffffff;
+	--border: #e2e8f000;
+	--primary: #8576ff;
+	--foreground: #484554;
+	--foreground-header: #6a6676;
+	--foreground-footer: #ada9bb;
+	--foreground-select: #8576ff;
+	--foreground-text: #fcf7ff;
+	--foreground-active: #383544;
+
+	--status-completed-background: #d1fae500;
+	--status-completed-border: #65ddb5;
+	--status-completed-indicator: #65ddb5;
+	--status-completed-text: #65ddb5;
+
+	--status-in-progress-background: #dbeafe00;
+	--status-in-progress-border: #77b1ff;
+	--status-in-progress-indicator: #77b1ff;
+	--status-in-progress-text: #77b1ff;
+}
+
+* {
+	transition: background-color 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95), color 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+		border-color 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+html,
+body {
+	height: 100%;
+}

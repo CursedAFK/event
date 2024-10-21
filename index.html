@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg" href="/fav-icon.svg" />
+		<link rel="stylesheet" href="/assets/scss/style.scss" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Event dashboard" />
+		<meta name="robots" content="index, follow" />
+		<meta property="og:title" content="Event" />
+		<meta property="og:description" content="Event dashboard" />
+		<meta name="twitter:title" content="Event" />
+		<meta name="twitter:description" content="Event dashboard" />
+		<title>Event</title>
+	</head>
+
+	<body class="event">
+		<aisde class="sidebar" data-collapsed="false">
+			<nav class="collapsed">
+				<img src="/images/nav-collapsed/Logo.svg" alt="logo" class="logo" />
+
+				<ul class="nav">
+					<li class="item active">
+						<img src="/images/nav-full/home-light.svg" alt="home" class="icon" />
+
+						<img src="/images/nav-full/home-dark.svg" alt="home" class="icon dark-icon" />
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-collapsed/components.svg" alt="event" class="icon" />
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-collapsed/receive-money.svg" alt="speakers" class="icon" />
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-collapsed/calendar.svg" alt="calendar" class="icon" />
+					</li>
+
+					<li class="item notify">
+						<img src="/images/nav-collapsed/bell.svg" alt="bell" class="icon" />
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-collapsed/double-chat-bubble.svg" alt="chat" class="icon" />
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-collapsed/settings-2.svg" alt="settings" class="icon" />
+					</li>
+
+					<li class="item nav-full">
+						<img src="/images/nav-collapsed/double-chevron-right.svg" alt="double arrow" class="icon" />
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-full/Avatar.svg" alt="profile" class="icon" />
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="full" data-open="false">
+				<img src="/images/nav-full/Logo.svg" alt="logo" class="logo" />
+
+				<ul class="nav">
+					<li class="item active">
+						<img src="/images/nav-full/home-light.svg" alt="home" class="icon light-icon" />
+
+						<img src="/images/nav-full/home-dark.svg" alt="home" class="icon dark-icon" />
+
+						<span class="label">Home</span>
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-full/solar_calendar-linear.svg" alt="event" class="icon" />
+
+						<span class="label">Events</span>
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-full/solar_user-speak-rounded-linear.svg" alt="speakers" class="icon" />
+
+						<span class="label">Speakers</span>
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-full/solar_document-linear.svg" alt="calendar" class="icon" />
+
+						<span class="label">Reports</span>
+					</li>
+
+					<li class="item notify">
+						<img src="/images/nav-full/bell.svg" alt="bell" class="icon" />
+
+						<span class="label">Notifications</span>
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-full/double-chat-bubble.svg" alt="chat" class="icon" />
+
+						<span class="label">Messages</span>
+					</li>
+
+					<li class="item">
+						<img src="/images/nav-full/settings-2.svg" alt="settings" class="icon" />
+
+						<span class="label">Settings</span>
+					</li>
+
+					<li class="item nav-collapse">
+						<img src="/images/nav-full/double-chevron-left.svg" alt="double arrow" class="icon" />
+
+						<span class="label">Collapse</span>
+					</li>
+
+					<li class="item dark-toggle" data-toggled="false">
+						<div class="toggle">
+							<div class="thumb"></div>
+						</div>
+
+						<span class="label">Dark mode</span>
+					</li>
+
+					<li class="item profile">
+						<img src="/images/nav-full/Avatar.svg" alt="profile" class="icon" />
+
+						<div class="label-container">
+							<span class="label">Rudra Devi</span>
+
+							<span class="sub-label">rudra.devi@gmail.com</span>
+						</div>
+					</li>
+				</ul>
+
+				<button class="dropdown">
+					<img src="/images/nav-full/solar_hamburger-menu-broken.svg" alt="hamburger menu" class="icon open light-icon" />
+
+					<img src="/images/nav-full/solar_hamburger-menu-broken-dark.svg" alt="hamburger menu" class="icon open dark-icon" />
+
+					<img src="/images/nav-full/close.svg" alt="times" class="icon close" />
+				</button>
+			</nav>
+		</aisde>
+
+		<main class="main">
+			<h2 class="summary-title">Welcome! here’s your summary</h2>
+
+			<section class="stats-container">
+				<div class="stats-card">
+					<div class="header">
+						<h4 class="title">Total Events</h4>
+
+						<img src="/images/stats/information-light.svg" alt="information" class="info light-icon" />
+
+						<img src="/images/stats/information-dark.svg" alt="information" class="info dark-icon" />
+					</div>
+
+					<div class="content">
+						<p class="value">100,000</p>
+
+						<p class="progress positive"><img src="/images/stats/arrow-up-right.svg" alt="arrow-up-right" class="icon" /> <span>+5.0%</span></p>
+					</div>
+				</div>
+
+				<div class="stats-card">
+					<div class="header">
+						<h4 class="title">Active Speakers</h4>
+
+						<img src="/images/stats/information-light.svg" alt="information" class="info light-icon" />
+
+						<img src="/images/stats/information-dark.svg" alt="information" class="info dark-icon" />
+					</div>
+
+					<div class="content">
+						<p class="value">25</p>
+
+						<p class="progress negative"><img src="/images/stats/arrow-down-right.svg" alt="arrow-down-right" class="icon" /> <span>-5.0%</span></p>
+					</div>
+				</div>
+
+				<div class="stats-card">
+					<div class="header">
+						<h4 class="title">Total Registrations</h4>
+
+						<img src="/images/stats/information-light.svg" alt="information" class="info light-icon" />
+
+						<img src="/images/stats/information-dark.svg" alt="information" class="info dark-icon" />
+					</div>
+
+					<div class="content">
+						<p class="value">300</p>
+
+						<p class="progress positive"><img src="/images/stats/arrow-up-right.svg" alt="arrow-up-right" class="icon" /> <span>+5.0%</span></p>
+					</div>
+				</div>
+
+				<div class="stats-card">
+					<div class="header">
+						<h4 class="title">Total Revenue</h4>
+
+						<img src="/images/stats/information-light.svg" alt="information" class="info light-icon" />
+
+						<img src="/images/stats/information-dark.svg" alt="information" class="info dark-icon" />
+					</div>
+
+					<div class="content">
+						<p class="value">$500,000</p>
+
+						<p class="progress positive"><img src="/images/stats/arrow-up-right.svg" alt="arrow-up-right" class="icon" /> <span>+5.0%</span></p>
+					</div>
+				</div>
+			</section>
+
+			<section class="charts-container">
+				<h4 class="title">Event Registrations per month</h4>
+
+				<div class="sub-container">
+					<div class="chart">
+						<canvas id="event-bar-chart"></canvas>
+					</div>
+
+					<div class="slides" data-active="1">
+						<img src="/images/slides/1.jfif" alt="news" class="slide first" />
+
+						<img src="/images/slides/2.jfif" alt="news" class="slide second" />
+
+						<img src="/images/slides/3.jfif" alt="news" class="slide third" />
+
+						<button class="prev-slide-btn">
+							<img src="/images/slides/Left Button.svg" alt="arrow-left" class="icon" />
+						</button>
+
+						<button class="next-slide-btn">
+							<img src="/images/slides/Right Button.svg" alt="arrow-right" class="icon" />
+						</button>
+
+						<div class="slide-container">
+							<div class="content first">
+								<h6 class="title">Latest News & Updates</h6>
+
+								<p class="description">
+									Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+									Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.
+								</p>
+							</div>
+
+							<div class="content second">
+								<h6 class="title">Latest News & Updates</h6>
+
+								<p class="description">
+									Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+									Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.
+								</p>
+							</div>
+
+							<div class="content third">
+								<h6 class="title">Latest News & Updates</h6>
+
+								<p class="description">
+									Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+									Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.
+								</p>
+							</div>
+
+							<div class="dots">
+								<div class="dot-container">
+									<div class="dot first"></div>
+								</div>
+
+								<div class="dot-container">
+									<div class="dot second"></div>
+								</div>
+
+								<div class="dot-container">
+									<div class="dot third"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="table-container">
+				<h4 class="title">Events History</h4>
+
+				<div class="table-top">
+					<div class="filters-container">
+						<div class="search-container">
+							<img src="/images/table/light/search.svg" alt="search" class="icon light-icon" />
+
+							<img src="/images/table/dark/search.svg" alt="search" class="icon dark-icon" />
+
+							<input type="search" placeholder="Search..." id="search-input" />
+						</div>
+
+						<select id="date-select" class="select-filter">
+							<option hidden>Date</option>
+
+							<option value="unknown">Not applicable</option>
+						</select>
+
+						<select id="status-select" class="select-filter">
+							<option hidden>Status</option>
+
+							<option value="all">All</option>
+
+							<option value="completed">Completed</option>
+
+							<option value="in-progress">In Progress</option>
+						</select>
+
+						<select id="name-select" class="select-filter">
+							<option hidden>Name</option>
+
+							<option value="unknown">Not applicable</option>
+						</select>
+					</div>
+
+					<div class="aside">
+						<h5 class="result-title">Displaying 30 results</h5>
+
+						<div class="sorts-container">
+							<div class="left-sort-container">
+								<p>Sort:</p>
+
+								<select id="recent-select" class="select-filter">
+									<option hidden>Most Recent</option>
+
+									<option value="unknown">Not applicable</option>
+								</select>
+							</div>
+
+							<div class="right-sort-container">
+								<button class="action more">
+									<img src="/images/table/light/dots-vertical.svg" alt="3 dots" class="icon light-icon" />
+
+									<img src="/images/table/dark/dots-vertical.svg" alt="3 dots" class="icon dark-icon" />
+								</button>
+
+								<button class="action export">
+									<img src="/images/table/light/download.svg" alt="download" class="icon light-icon" />
+
+									<img src="/images/table/dark/download.svg" alt="download" class="icon dark-icon" />
+
+									<span>Export</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<table class="table-main desktop">
+					<thead>
+						<tr>
+							<th>Event Name</th>
+
+							<th>Date</th>
+
+							<th>Speaker</th>
+
+							<th>Status</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>Cloud Innovation Summit</td>
+
+							<td>2024-10-15</td>
+
+							<td>Jane Doe</td>
+
+							<td class="completed">
+								<div class="icon-container">
+									<div class="icon"></div>
+									<p>Completed</p>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Blockchain Revolution Conference</td>
+
+							<td>2024-11-05</td>
+
+							<td>Dr. Peter Smith</td>
+
+							<td class="in-progress">
+								<div class="icon-container">
+									<div class="icon"></div>
+									<p>In Progress</p>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table-main mobile">
+					<thead>
+						<tr>
+							<th>
+								<div class="head-container">
+									<p>Event Name</p>
+
+									<p>Status</p>
+								</div>
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr data-collapsed="false">
+							<td>
+								<div class="main-container">
+									<div class="data-container">
+										<div class="name-container">
+											<img src="/images/table/light/chevron-right.svg" alt="arrow right" class="arrow-action light-icon" />
+
+											<img src="/images/table/dark/chevron-right.svg" alt="arrow right" class="arrow-action dark-icon" />
+
+											<p>Cloud Innovation Summit</p>
+										</div>
+
+										<div class="icon-container completed">
+											<p>Completed</p>
+										</div>
+									</div>
+
+									<div class="more-info">
+										<p>Jane Doe</p>
+
+										<p>2024-10-15</p>
+									</div>
+								</div>
+							</td>
+						</tr>
+
+						<tr data-collapsed="false">
+							<td>
+								<div class="main-container">
+									<div class="data-container">
+										<div class="name-container">
+											<img src="/images/table/light/chevron-right.svg" alt="arrow right" class="arrow-action light-icon" />
+
+											<img src="/images/table/dark/chevron-right.svg" alt="arrow right" class="arrow-action dark-icon" />
+
+											<p>Blockchain Revolution Conference</p>
+										</div>
+
+										<div class="icon-container in-progress">
+											<p>In Progress</p>
+										</div>
+									</div>
+
+									<div class="more-info">
+										<p>Dr. Peter Smith</p>
+
+										<p>2024-11-05</p>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="table-bottom">
+					<div class="pagination-container">
+						<button class="icon prev">
+							<img src="/images/table/light/chevron-left.svg" alt="arrow-left" class="light-icon" />
+
+							<img src="/images/table/dark/chevron-left.svg" alt="arrow-left" class="dark-icon" />
+						</button>
+
+						<div class="pages">
+							<button class="page">1</button>
+						</div>
+
+						<button class="icon next">
+							<img src="/images/table/light/chevron-right.svg" alt="arrow-right" class="light-icon" />
+
+							<img src="/images/table/dark/chevron-right.svg" alt="arrow-right" class="dark-icon" />
+						</button>
+					</div>
+
+					<div class="total-rows-container">
+						<p>Show:</p>
+
+						<select id="recent-select" class="select-filter">
+							<option hidden>10 rows</option>
+
+							<option value="unknown">Not applicable</option>
+						</select>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="bottom-nav">
+			<ul class="nav">
+				<li class="item active">
+					<div class="icon-container">
+						<img src="/images/footer-nav/light/home.svg" alt="home" class="icon light-icon" />
+
+						<img src="/images/footer-nav/dark/home.svg" alt="home" class="icon dark-icon" />
+					</div>
+
+					<span class="label">Home</span>
+				</li>
+
+				<li class="item">
+					<div class="icon-container">
+						<img src="/images/footer-nav/light/solar_calendar-linear.svg" alt="calendar" class="icon light-icon" />
+
+						<img src="/images/footer-nav/dark/solar_calendar-linear.svg" alt="calendar" class="icon dark-icon" />
+					</div>
+
+					<span class="label">Events</span>
+				</li>
+
+				<li class="item">
+					<div class="icon-container">
+						<img src="/images/footer-nav/light/solar_user-speak-rounded-linear.svg" alt="speakers" class="icon light-icon" />
+
+						<img src="/images/footer-nav/dark/solar_user-speak-rounded-linear.svg" alt="speakers" class="icon dark-icon" />
+					</div>
+
+					<span class="label">Speakers</span>
+				</li>
+
+				<li class="item">
+					<div class="icon-container">
+						<img src="/images/footer-nav/light/solar_document-linear.svg" alt="document" class="icon light-icon" />
+
+						<img src="/images/footer-nav/dark/solar_document-linear.svg" alt="document" class="icon dark-icon" />
+					</div>
+
+					<span class="label">Reports</span>
+				</li>
+
+				<li class="item">
+					<div class="icon-container">
+						<img src="/images/footer-nav/light/user-circle.svg" alt="profile" class="icon light-icon" />
+
+						<img src="/images/footer-nav/dark/user-circle.svg" alt="profile" class="icon dark-icon" />
+					</div>
+
+					<span class="label">Profile</span>
+				</li>
+			</ul>
+		</footer>
+
+		<div class="event-modal" data-open="false">
+			<div class="event-modal-container">
+				<div class="modal-header">
+					<div>
+						<h4 class="title">Event Name</h4>
+
+						<p class="date">Event Date</p>
+					</div>
+
+					<button class="close-icon">
+						<img src="/images/nav-full/close.svg" alt="times" />
+					</button>
+				</div>
+
+				<p class="description">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente facere accusantium suscipit voluptatibus modi harum quam, voluptas at.
+					Inventore.
+				</p>
+
+				<div class="modal-body">
+					<img src="/images/modal/light/Avatar Group.svg" alt="profile" class="avatars light-icon" />
+
+					<img src="/images/modal/light/Avatar Group.svg" alt="profile" class="avatars dark-icon" />
+
+					<p class="speakers">3 Guest Speakers: Speaker name A, Speaker name B, Speaker name C.</p>
+
+					<p class="attendance">300 Attendees</p>
+				</div>
+
+				<div class="modal-footer">
+					<div class="edit-container">
+						<button class="edit">Edit</button>
+					</div>
+
+					<div class="actions-container">
+						<button class="action delete">Delete</button>
+
+						<button class="action mark">Mark as completed</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
